@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Poppins/Poppins-Medium.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/CoolDrops.png" type="Texture" id=2]
+[ext_resource path="res://assets/01_idle.png" type="Texture" id=3]
+[ext_resource path="res://assets/04_idle.png" type="Texture" id=4]
+[ext_resource path="res://assets/03_idle.png" type="Texture" id=5]
+[ext_resource path="res://assets/02_idle.png" type="Texture" id=6]
+[ext_resource path="res://assets/bulbs_material.png" type="Texture" id=7]
+[ext_resource path="res://assets/bg1Hi copy.png" type="Texture" id=8]
+[ext_resource path="res://assets/BassLong.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Shader" id=2]
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+
+[node name="Label" type="Label"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "cool drops 2.0"
+__meta__ = {
+"_edit_horizontal_guides_": [ 2048.0 ],
+"_edit_vertical_guides_": [ 2800.0 ]
+}
+
+[node name="Bg1HiCopy" type="Sprite" parent="."]
+modulate = Color( 0.368627, 0.262745, 0.00392157, 1 )
+self_modulate = Color( 0.662745, 0.552941, 0, 1 )
+material = SubResource( 3 )
+position = Vector2( 1400, 1033 )
+scale = Vector2( 2.73633, 3.96484 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BulbsMaterial" type="Sprite" parent="."]
+position = Vector2( 1483.5, 663 )
+scale = Vector2( 2.80762, 2.69336 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CoolDrops" type="Sprite" parent="."]
+position = Vector2( 1396, 234 )
+scale = Vector2( 1.17199, 1.17199 )
+texture = ExtResource( 2 )
+
+[node name="01Idle" type="Sprite" parent="."]
+position = Vector2( 503.25, 593.75 )
+scale = Vector2( 3.15417, 3.15417 )
+texture = ExtResource( 3 )
+
+[node name="02Idle" type="Sprite" parent="."]
+position = Vector2( 2034.5, 611 )
+scale = Vector2( 3.175, 3.175 )
+texture = ExtResource( 6 )
+
+[node name="03Idle" type="Sprite" parent="."]
+position = Vector2( 1530.5, 611 )
+scale = Vector2( 3.2561, 3.2561 )
+texture = ExtResource( 5 )
+
+[node name="04Idle" type="Sprite" parent="."]
+position = Vector2( 1025.5, 611 )
+scale = Vector2( 3.25417, 3.25417 )
+texture = ExtResource( 4 )
+
+[node name="BassLong" type="Sprite" parent="."]
+position = Vector2( 1583, 1305 )
+scale = Vector2( 0.575179, 0.721928 )
+texture = ExtResource( 9 )
